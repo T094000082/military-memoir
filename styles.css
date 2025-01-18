@@ -181,14 +181,13 @@ section h2::before {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
-    width: 600px;
-    height: 600px;
-    background-image: url('images/army-badge.png');
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-image: url('./images/army-badge.png'), url('../images/army-badge.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.08;
+    opacity: 0.1;
     pointer-events: none;
     z-index: -1;
     filter: grayscale(100%);
@@ -207,4 +206,45 @@ section h2::before {
     margin: 0;
     font-size: 0.9em;
     color: #B4E0FF;
+}
+
+/* 導航按鈕 */
+.navigation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background: linear-gradient(145deg, rgba(47, 75, 138, 0.6), rgba(33, 53, 98, 0.6));
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px;
+    color: #FFD700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background: linear-gradient(145deg, rgba(57, 85, 148, 0.6), rgba(43, 63, 108, 0.6));
+    transform: translateY(-2px);
+}
+
+/* 閱讀更多按鈕 */
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 4px;
+    color: #FFD700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background: rgba(255, 215, 0, 0.2);
+    transform: translateX(5px);
 } 

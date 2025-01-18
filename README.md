@@ -4,7 +4,7 @@
 
 ## 網站連結
 
-https://YOUR_USERNAME.github.io/taimu-story/
+https://t094000082.github.io/military-memoir/
 
 ## 內容架構
 

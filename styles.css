@@ -1,0 +1,210 @@
+body {
+    font-family: "Microsoft JhengHei", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a2a6c, #2a4858, #141E30);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, rgba(41, 50, 78, 0.92), rgba(27, 32, 48, 0.92));
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    color: #E8EBF2;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: #FFD700;
+    text-align: center;
+    border-bottom: 2px solid rgba(255,215,0,0.3);
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #7EB2FF;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #B4E0FF;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.intro {
+    background: linear-gradient(135deg, rgba(47, 75, 138, 0.6), rgba(33, 53, 98, 0.6));
+    padding: 20px;
+    border-left: 4px solid #FFD700;
+    margin: 20px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.timeline > ul > li {
+    margin-bottom: 30px;
+}
+
+.timeline ul ul {
+    list-style-type: disc;
+    margin-top: 10px;
+}
+
+.timeline ul ul li {
+    margin: 5px 0;
+    color: #D1D9E6;
+}
+
+.timeline ul ul li:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.container {
+    background: linear-gradient(145deg, #243B6C, #1B2B4B);
+}
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(74, 144, 226, 0.1));
+    pointer-events: none;
+}
+
+.content section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background: linear-gradient(145deg, rgba(41, 50, 78, 0.85), rgba(27, 32, 48, 0.85));
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.subsection {
+    margin: 25px 0;
+}
+
+.subsection:first-child {
+    margin-top: 0;
+}
+
+.subsection:last-child {
+    margin-bottom: 0;
+}
+
+.subsection::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, #7EB2FF, transparent);
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.8;
+    text-align: justify;
+    color: #D1D9E6;
+}
+
+section h2 {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 70%;
+    background: linear-gradient(to bottom, #7EB2FF, #4A90E2);
+    border-radius: 2px;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.subsection h3 {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    margin-bottom: 15px;
+}
+
+/* 添加一些互動效果 */
+.content section a {
+    color: #7EB2FF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.content section a:hover {
+    color: #FFD700;
+}
+
+/* 浮水印基本設置 */
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 600px;
+    height: 600px;
+    background-image: url('images/army-badge.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: -1;
+    filter: grayscale(100%);
+}
+
+/* 註解區塊樣式 */
+.note {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #FFD700;
+    border-radius: 0 4px 4px 0;
+}
+
+.note p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #B4E0FF;
+} 

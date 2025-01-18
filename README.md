@@ -11,4 +11,6 @@ https://t094000082.github.io/military-memoir/
 - 初到金門
 - 尚義機場服役時期
 - 圓環班時期
-- 塔<span class="fortress-name">后</span>堡時期 
+- 塔<span class="fortress-name">后</span>堡時期
+- 相關新聞
+- 緊張情勢 

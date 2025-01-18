@@ -247,4 +247,28 @@ section h2::before {
 .read-more:hover {
     background: rgba(255, 215, 0, 0.2);
     transform: translateX(5px);
+}
+
+/* 碉堡編號模糊效果 */
+.fortress-number {
+    display: inline-block;
+    filter: blur(3px);
+    user-select: none;
+    transition: filter 0.3s ease;
+}
+
+.fortress-number:hover {
+    filter: blur(5px);
+}
+
+/* 堡壘名稱模糊效果 */
+.fortress-name {
+    display: inline-block;
+    filter: blur(2px);
+    user-select: none;
+    transition: filter 0.3s ease;
+}
+
+.fortress-name:hover {
+    filter: blur(4px);
 } 

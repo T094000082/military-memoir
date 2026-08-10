@@ -1,59 +1,181 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>太武紀事</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>太武紀事 — 1996-1999 金門前線祕辛與台海危機紀錄</title>
+  <meta name="description" content="記述1996-1999年台海飛彈危機期間，美軍第七艦隊小鷹號航艦停靠金門外海壓制大陸攻台行動的真實軍中回憶錄。">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="watermark"></div>
-    <div class="container">
-        <h1>太武紀事</h1>
-        <div class="intro">
-            <p>隨著時間一點一點的逝去，以前發生的軍中大事記憶越來越模糊所以在這裡做個紀錄。</p>
-            <p>主旨在講述網路上1998年有一個輕描淡寫的紀錄，記述第七艦隊小鷹號戰艦穿越台海一事。
-            實際記錄著我當兵時中國大陸執行攻台計畫，美軍戰艦停靠金門外海壓制大陸攻台行動的一個真實事件。            
-            </p>
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <div class="watermark"></div>
+
+  <div class="container">
+
+    <!-- Mascot Hero Persona Banner Card -->
+    <div class="mascot-hero-card">
+      <div class="mascot-avatar-wrap">
+        <img src="images/leo-lion-avatar.png" alt="里歐 Leo Lion 形象" class="mascot-avatar-img">
+        <div class="mascot-radar-ring"></div>
+      </div>
+      <div class="mascot-info">
+        <div class="mascot-badge-status">
+          <span>🚨</span> 戰備等級：狀況三 ｜ 駐守地點：金門太武山前線
         </div>
-
-        <div class="content">
-            <section id="arrival">
-                <h2>初到金門</h2>
-                <p>當年抽中的金馬獎，搭軍艦到了金門尚義幹訓班過了一夜。隔日班長告知我們，未來我們就是防空單位，看到的敵軍機飛過金門上空一定要開槍，去年只有一座碉堡開槍，結果沒開槍的碉堡堡長都被抓去關了。</p>
-                <a href="chapters/arrival.html" class="read-more">閱讀更多</a>
-            </section>
-
-            <section id="airport">
-                <h2>尚義機場服役時期</h2>
-                <p>我服務過的單位分別有尚義機場、圓<span class="fortress-name">環</span>班塔<span class="fortress-name">后</span>堡與鵲<span class="fortress-name">山</span>堡，支援的單位有太武山上的最高點<span class="fortress-number">21</span>堡，還有面對廈門的<span class="fortress-number">17</span>堡。</p>
-                <a href="chapters/airport.html" class="read-more">閱讀更多</a>
-            </section>
-
-            <section id="circle">
-                <h2>圓<span class="fortress-name">環</span>班時期</h2>
-                <p>到了太武山上的圓<span class="fortress-name">環</span>班，我們也接收了新的狗狗，他是白子，眼睛是紅色的，毛是雪白的，體型是狼狗的樣貌。非常的兇猛甚至是瘋狂，牠吠人時是直接從空中撲出去，直到頸部的鐵鏈被拉直才從空中落地，非常的嚇人，但是，其實牠是隻乖狗狗。</p>
-                <a href="chapters/circle.html" class="read-more">閱讀更多</a>
-            </section>
-
-            <section id="tahu">
-                <h2>塔<span class="fortress-name">后</span>堡時期</h2>
-                <p>大概是5月，我就被調到塔<span class="fortress-name">后</span>山，山下一面是廣播電台，以前用來對大陸喊話用的，當時無人駐守，我曾經進去看了一下，設備看來都還很新。另外一面是<span class="fortress-name">閩南</span>工作處，也就是俗稱的情報局。</p>
-                <a href="chapters/tahu.html" class="read-more">閱讀更多</a>
-            </section>
-
-            <section id="news">
-                <h2>相關新聞</h2>
-                <p>回顧1996年台海飛彈危機，當時台灣舉行首度總統直選，中共為嚇阻台灣的本土派勢力，在台海進行飛彈演習。這場危機與我在金門服役期間的經歷息息相關。</p>
-                <a href="chapters/news.html" class="read-more">閱讀更多</a>
-            </section>
-
-            <section id="tension">
-                <h2>緊張情勢</h2>
-                <p>返金後，碉堡內的氣氛變得緊張，<span class="fortress-name">閩南</span>工作處的長官全部消失，各據點準備獨立作戰。從重砲演習、921地震到颱風襲擊，這段期間充滿了各種挑戰與威脅。</p>
-                <a href="chapters/tension.html" class="read-more">閱讀更多</a>
-            </section>
+        <div class="mascot-title">
+          <span>里歐 Leo Lion</span>
+          <span style="font-size: 0.85rem; opacity: 0.8; font-weight: 500;">(防空砲兵 / 獨立據點軍紀記錄)</span>
         </div>
+        <p class="mascot-quote">
+          「隨著時間漸漸流逝，昔日金門前線的隆隆砲聲與戰備記憶逐漸模糊。在這裡，我真實記錄下 1998 年美軍第七艦隊小鷹號戰艦穿越台海、停靠金門外海壓制中共攻台行動的親歷真相。」
+        </p>
+      </div>
     </div>
+
+    <!-- Header Titles -->
+    <h1>太武紀事</h1>
+    <div class="title-sub">⚔️ 1996~1999 金門防空前線 ‧ 台海危機真實對峙回憶錄 ⚔️</div>
+
+    <div class="intro">
+      <p>
+        網路上關於 1998 年曾有一筆輕描淡寫的記載，記述美軍第七艦隊小鷹號航艦穿越台灣海峽一事。
+      </p>
+      <p>
+        這部紀事實際記錄著我當年於金門服役期間，親眼目睹中共執行攻台計畫、兩岸火力威嚇、與美軍戰艦停靠金門外海壓制敵軍攻勢的第一線真實事件。
+      </p>
+    </div>
+
+    <!-- Interactive Chapters Grid -->
+    <div class="content-grid">
+
+      <!-- Chapter 1 -->
+      <div class="chapter-card">
+        <div>
+          <div class="chapter-card-header">
+            <div class="chapter-icon-badge">⚓</div>
+            <span class="chapter-number-tag">CHAPTER 01</span>
+          </div>
+          <h2>初到金門</h2>
+          <p>
+            當年抽中人人稱畏的「金馬獎」，搭乘軍艦來到金門尚義幹訓班。隔日班長嚴肅告誡：「我們是防空單位，看到敵機飛過金門上空一定要開槍，沒開槍的堡長全都被抓去關了！」
+          </p>
+        </div>
+        <a href="chapters/arrival.html" class="read-more">
+          <span>閱讀章節細節 ↗</span>
+        </a>
+      </div>
+
+      <!-- Chapter 2 -->
+      <div class="chapter-card">
+        <div>
+          <div class="chapter-card-header">
+            <div class="chapter-icon-badge">✈️</div>
+            <span class="chapter-number-tag">CHAPTER 02</span>
+          </div>
+          <h2>尚義機場服役時期</h2>
+          <p>
+            駐守尚義機場碉堡，每天看著軍機起飛、在 40 高砲與 50 機砲旁執行戰備向軍機敬禮。後來換裝 T82 防空快砲，與這群學長學弟在大樹下吃著最香甜的桑椹。
+          </p>
+        </div>
+        <a href="chapters/airport.html" class="read-more">
+          <span>閱讀章節細節 ↗</span>
+        </a>
+      </div>
+
+      <!-- Chapter 3 -->
+      <div class="chapter-card">
+        <div>
+          <div class="chapter-card-header">
+            <div class="chapter-icon-badge">🐺</div>
+            <span class="chapter-number-tag">CHAPTER 03</span>
+          </div>
+          <h2>圓環班時期</h2>
+          <p>
+            移防至太武山圓環班，接收了一隻眼神通紅、毛色雪白的兇猛白子狼犬；並在寢室床後發現密道麻將桌，直通山頂機砲站，守護砲彈指揮總部上空。
+          </p>
+        </div>
+        <a href="chapters/circle.html" class="read-more">
+          <span>閱讀章節細節 ↗</span>
+        </a>
+      </div>
+
+      <!-- Chapter 4 -->
+      <div class="chapter-card">
+        <div>
+          <div class="chapter-card-header">
+            <div class="chapter-icon-badge">📻</div>
+            <span class="chapter-number-tag">CHAPTER 04</span>
+          </div>
+          <h2>塔后堡時期</h2>
+          <p>
+            塔后山下一面是舊廣播電台，另一面則是極度神祕的「閩南工作處」（軍情報局）。在那裡每天目睹數不盡的大陸走私漁船，並開始與情報局軍官有了接觸。
+          </p>
+        </div>
+        <a href="chapters/tahu.html" class="read-more">
+          <span>閱讀章節細節 ↗</span>
+        </a>
+      </div>
+
+      <!-- Chapter 5 -->
+      <div class="chapter-card">
+        <div>
+          <div class="chapter-card-header">
+            <div class="chapter-icon-badge">⚠️</div>
+            <span class="chapter-number-tag">CHAPTER 05</span>
+          </div>
+          <h2>相關新聞背景</h2>
+          <p>
+            回顧 1996 年台海飛彈危機與軍情局「少康專案」，總後勤部劉連昆少將提供極度機密情報。這段驚心動魄的歷史與我在金門服役時期的遭遇息息相關。
+          </p>
+        </div>
+        <a href="chapters/news.html" class="read-more">
+          <span>閱讀章節細節 ↗</span>
+        </a>
+      </div>
+
+      <!-- Chapter 6 -->
+      <div class="chapter-card">
+        <div>
+          <div class="chapter-card-header">
+            <div class="chapter-icon-badge">🚨</div>
+            <span class="chapter-number-tag">CHAPTER 06</span>
+          </div>
+          <h2>緊張情勢與小鷹號航艦</h2>
+          <p>
+            情報局長官全數神秘消失赴陸救線人，各據點發放屍袋與遺書準備獨立作戰！重砲演習撼動天地，美軍小鷹號航空母艦緊急停靠金門外海對峙...
+          </p>
+        </div>
+        <a href="chapters/tension.html" class="read-more">
+          <span>閱讀章節細節 ↗</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>© 2026 太武紀事 (military-memoir) | 里歐 Leo Lion 歷史回憶紀錄</p>
+      <p style="margin-top: 6px; font-size: 0.8rem; color: var(--text-secondary);">Hosted on GitHub Pages</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('reading-progress').style.width = scrolled + '%';
+    });
+
+    // Decrypt confidential fortress blur on click/hover
+    document.querySelectorAll('.fortress-number, .fortress-name').forEach(el => {
+      el.addEventListener('click', () => el.classList.toggle('unlocked'));
+    });
+  </script>
 </body>
-</html> 
+</html>

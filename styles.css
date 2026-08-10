@@ -442,6 +442,59 @@ footer.site-footer {
   margin-top: 40px;
 }
 
+/* Visitor Counter Pill Badges */
+.footer-counter-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.counter-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid var(--border-gold);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.counter-badge-pill:hover {
+  border-color: var(--accent-gold-bright);
+  box-shadow: 0 4px 18px rgba(245, 158, 11, 0.25);
+  transform: translateY(-1px);
+}
+
+.counter-icon {
+  font-size: 0.95rem;
+}
+
+.counter-label {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+}
+
+.counter-value {
+  font-family: var(--font-hud);
+  font-weight: 700;
+  color: var(--accent-gold-bright);
+  background: rgba(245, 158, 11, 0.15);
+  padding: 2px 9px;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  min-width: 32px;
+  text-align: center;
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .container {

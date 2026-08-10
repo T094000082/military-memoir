@@ -405,18 +405,25 @@ p {
   text-decoration: underline;
 }
 
-/* Watermark Badge in Background */
+/* Enlarged Background Army Badge Watermark & Grid Overlay */
 .watermark {
   position: fixed;
-  bottom: 20px; right: 20px;
-  width: 140px; height: 140px;
+  bottom: -40px;
+  right: -40px;
+  width: 560px;
+  height: 560px;
+  max-width: 65vw;
+  max-height: 65vw;
   background-image: url('images/army-badge.png'), url('../images/army-badge.png');
   background-size: contain;
+  background-position: center bottom;
   background-repeat: no-repeat;
-  opacity: 0.12;
+  opacity: 0.18;
   pointer-events: none;
   z-index: 0;
-  filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.5));
+  filter: drop-shadow(0 0 40px rgba(245, 158, 11, 0.4)) saturate(1.3);
+  mix-blend-mode: screen;
+  transition: all 0.5s ease;
 }
 
 /* Footer */

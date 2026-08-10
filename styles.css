@@ -510,6 +510,82 @@ footer.site-footer {
   text-align: center;
 }
 
+/* High-Tension Feature Special Banner & Story Cards */
+.tension-special-card {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.16), rgba(15, 23, 42, 0.95));
+  border: 2px solid var(--accent-red);
+  border-radius: 20px;
+  padding: 28px;
+  margin-top: 32px;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.25);
+  transition: all 0.3s ease;
+}
+
+.tension-special-card:hover {
+  box-shadow: 0 15px 40px rgba(239, 68, 68, 0.4);
+  border-color: #fca5a5;
+  transform: translateY(-3px);
+}
+
+.tension-tag-alert {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  background: #ef4444;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.82rem;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  animation: pulse-red 2s infinite ease-in-out;
+}
+
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6); }
+  50% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+}
+
+.tension-moment-box {
+  background: rgba(15, 23, 42, 0.85);
+  border-left: 4px solid var(--accent-red);
+  border-radius: 0 14px 14px 0;
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  border-right: 1px solid rgba(255,255,255,0.04);
+  position: relative;
+}
+
+.tension-moment-tag {
+  font-family: var(--font-hud);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--accent-red);
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.tension-moment-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--accent-gold-bright);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.tension-quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #f1f5f9;
+  text-align: justify;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
